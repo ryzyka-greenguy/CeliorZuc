@@ -1,0 +1,1479 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 71 | Scripts: 18 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.CeliorZuc
+G2L["1"] = Instance.new("ScreenGui", game:WaitForChild("CoreGui"));
+G2L["1"]["Name"] = [[CeliorZuc]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.CeliorZuc.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(33, 33, 33);
+G2L["2"]["Size"] = UDim2.new(0, 457, 0, 260);
+G2L["2"]["Position"] = UDim2.new(0, 203, 0, 182);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Main]];
+
+
+-- StarterGui.CeliorZuc.Main.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.CeliorZuc.Main.Panel
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Size"] = UDim2.new(0, 457, 0, 29);
+G2L["4"]["Position"] = UDim2.new(0, 0, 0, -1);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Name"] = [[Panel]];
+
+
+-- StarterGui.CeliorZuc.Main.Panel.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+G2L["5"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.CeliorZuc.Main.Panel.MenuButton
+G2L["6"] = Instance.new("ImageButton", G2L["4"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Image"] = [[rbxassetid://81648343120224]];
+G2L["6"]["Size"] = UDim2.new(0, 32, 0, 32);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Name"] = [[MenuButton]];
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Position"] = UDim2.new(0, 0, -0.06897, 0);
+
+
+-- StarterGui.CeliorZuc.Main.Panel.MenuButton.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.Panel.MenuButton.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.Panel.TextLabel
+G2L["9"] = Instance.new("TextLabel", G2L["4"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["9"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["TextSize"] = 20;
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["Size"] = UDim2.new(0, 70, 0, 19);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[CeliorZuc]];
+G2L["9"]["Position"] = UDim2.new(0, 32, 0, -2);
+
+
+-- StarterGui.CeliorZuc.Main.Panel.TextLabel
+G2L["a"] = Instance.new("TextLabel", G2L["4"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["a"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["TextSize"] = 15;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["TextDirection"] = Enum.TextDirection.LeftToRight;
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Size"] = UDim2.new(0, 109, 0, 19);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Windows Executor]];
+G2L["a"]["Position"] = UDim2.new(0, 32, 0, 11);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame
+G2L["b"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["b"]["Active"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Size"] = UDim2.new(0, 150, 0, 232);
+G2L["b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Position"] = UDim2.new(0, 0, 0, 27);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel
+G2L["c"] = Instance.new("Frame", G2L["b"]);
+G2L["c"]["ZIndex"] = 2147248;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Size"] = UDim2.new(0, 45, 0, 233);
+G2L["c"]["Position"] = UDim2.new(0, -1, -1, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[Panel]];
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+G2L["d"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.ExecutorTab
+G2L["e"] = Instance.new("ImageButton", G2L["c"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["Image"] = [[rbxassetid://93861681687521]];
+G2L["e"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Name"] = [[ExecutorTab]];
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Position"] = UDim2.new(0, 8, 0, 88);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.ExecutorTab.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.ScriptsTab
+G2L["10"] = Instance.new("ImageButton", G2L["c"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Image"] = [[rbxassetid://97399475323422]];
+G2L["10"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Name"] = [[ScriptsTab]];
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Position"] = UDim2.new(0, 8, 0, 115);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.ScriptsTab.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.SettingsTab
+G2L["12"] = Instance.new("ImageButton", G2L["c"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["Image"] = [[rbxassetid://72959470467034]];
+G2L["12"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["Name"] = [[SettingsTab]];
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Position"] = UDim2.new(0, 8, 0, 145);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.SettingsTab.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.ImageLabel
+G2L["14"] = Instance.new("ImageLabel", G2L["c"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["ImageTransparency"] = 1;
+G2L["14"]["Image"] = [[rbxassetid://71700277376603]];
+G2L["14"]["Size"] = UDim2.new(0, 120, 0, 67);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Position"] = UDim2.new(0, 14, 0, 21);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.ExecLabel
+G2L["15"] = Instance.new("TextLabel", G2L["c"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["15"]["TextTransparency"] = 1;
+G2L["15"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["TextSize"] = 20;
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["Size"] = UDim2.new(0, 70, 0, 19);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[Executor]];
+G2L["15"]["Name"] = [[ExecLabel]];
+G2L["15"]["Position"] = UDim2.new(0, 44, 0, 93);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.Scriptlabel
+G2L["16"] = Instance.new("TextLabel", G2L["c"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["16"]["TextTransparency"] = 1;
+G2L["16"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["TextSize"] = 20;
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Size"] = UDim2.new(0, 70, 0, 19);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[Scripts]];
+G2L["16"]["Name"] = [[Scriptlabel]];
+G2L["16"]["Position"] = UDim2.new(0, 44, 0, 120);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.Settingslabel
+G2L["17"] = Instance.new("TextLabel", G2L["c"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["17"]["TextTransparency"] = 1;
+G2L["17"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["TextSize"] = 20;
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["BackgroundTransparency"] = 1;
+G2L["17"]["Size"] = UDim2.new(0, 70, 0, 19);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Settings]];
+G2L["17"]["Name"] = [[Settingslabel]];
+G2L["17"]["Position"] = UDim2.new(0, 44, 0, 150);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.Discordlabel
+G2L["18"] = Instance.new("TextLabel", G2L["c"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["18"]["TextTransparency"] = 1;
+G2L["18"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["TextSize"] = 20;
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["BackgroundTransparency"] = 1;
+G2L["18"]["Size"] = UDim2.new(0, 126, 0, 19);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[got any problems?]];
+G2L["18"]["Name"] = [[Discordlabel]];
+G2L["18"]["Position"] = UDim2.new(0, 10, 0, 190);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.DiscordButton
+G2L["19"] = Instance.new("TextButton", G2L["c"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextTransparency"] = 1;
+G2L["19"]["TextSize"] = 12;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(0, 146, 0, 24);
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Name"] = [[DiscordButton]];
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[discord.gg/celiorzuc]];
+G2L["19"]["Position"] = UDim2.new(0.00676, 0, 0.897, 0);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.DiscordButton.LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.MenuButton
+G2L["1b"] = Instance.new("ImageButton", G2L["c"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["Image"] = [[rbxassetid://117393654317991]];
+G2L["1b"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["1b"]["BackgroundTransparency"] = 1;
+G2L["1b"]["Name"] = [[MenuButton]];
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Position"] = UDim2.new(0, 8, 0, 0);
+
+
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.MenuButton.LocalScript
+G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab
+G2L["1d"] = Instance.new("Frame", G2L["2"]);
+G2L["1d"]["Visible"] = false;
+G2L["1d"]["ZIndex"] = 0;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["Size"] = UDim2.new(0, 457, 0, 232);
+G2L["1d"]["Position"] = UDim2.new(0, 0, 0.10769, 0);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Name"] = [[SettingsTab]];
+G2L["1d"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.FPS
+G2L["1e"] = Instance.new("TextBox", G2L["1d"]);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["Name"] = [[FPS]];
+G2L["1e"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["RichText"] = true;
+G2L["1e"]["MultiLine"] = true;
+G2L["1e"]["ClearTextOnFocus"] = false;
+G2L["1e"]["PlaceholderText"] = [[Number here]];
+G2L["1e"]["Size"] = UDim2.new(0, 62, 0, 46);
+G2L["1e"]["Position"] = UDim2.new(0.84902, 0, 0.03879, 0);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[]];
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.FPS.UICorner
+G2L["1f"] = Instance.new("UICorner", G2L["1e"]);
+G2L["1f"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.LocalScript
+G2L["20"] = Instance.new("LocalScript", G2L["1d"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.FPSUnlocker
+G2L["21"] = Instance.new("TextButton", G2L["1d"]);
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["Size"] = UDim2.new(0, 67, 0, 31);
+G2L["21"]["Name"] = [[FPSUnlocker]];
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[]];
+G2L["21"]["Position"] = UDim2.new(0.67615, 0, 0.06897, 0);
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.FPSUnlocker.UICorner
+G2L["22"] = Instance.new("UICorner", G2L["21"]);
+G2L["22"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.FPSUnlocker.FPSUnlocker
+G2L["23"] = Instance.new("Folder", G2L["21"]);
+G2L["23"]["Name"] = [[FPSUnlocker]];
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.FPSUnlocker.FPSUnlocker.LocalScript
+G2L["24"] = Instance.new("LocalScript", G2L["23"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.FPSUnlocker.FPSUnlocker.ToggleCircle
+G2L["25"] = Instance.new("Frame", G2L["23"]);
+G2L["25"]["Active"] = true;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(101, 0, 0);
+G2L["25"]["Size"] = UDim2.new(0, 27, 0, 27);
+G2L["25"]["Position"] = UDim2.new(0, 2, 0, 2);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Name"] = [[ToggleCircle]];
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.FPSUnlocker.FPSUnlocker.ToggleCircle.UICorner
+G2L["26"] = Instance.new("UICorner", G2L["25"]);
+G2L["26"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.FPSUnlocker.FPSUnlocker.TextLabel
+G2L["27"] = Instance.new("TextLabel", G2L["23"]);
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["27"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["TextSize"] = 20;
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["BackgroundTransparency"] = 1;
+G2L["27"]["Size"] = UDim2.new(0, 105, 0, 19);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[FPS Unlocker]];
+G2L["27"]["Position"] = UDim2.new(0, -293, 0, 6);
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.WalkSpeedChanger
+G2L["28"] = Instance.new("Folder", G2L["1d"]);
+G2L["28"]["Name"] = [[WalkSpeedChanger]];
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.WalkSpeedChanger
+G2L["29"] = Instance.new("TextButton", G2L["1d"]);
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["TextSize"] = 14;
+G2L["29"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29"]["Size"] = UDim2.new(0, 67, 0, 31);
+G2L["29"]["Name"] = [[WalkSpeedChanger]];
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Text"] = [[]];
+G2L["29"]["Position"] = UDim2.new(0.67615, 0, 0.2931, 0);
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.WalkSpeedChanger.UICorner
+G2L["2a"] = Instance.new("UICorner", G2L["29"]);
+G2L["2a"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker
+G2L["2b"] = Instance.new("Folder", G2L["29"]);
+G2L["2b"]["Name"] = [[FPSUnlocker]];
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker.LocalScript
+G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker.ToggleCircle
+G2L["2d"] = Instance.new("Frame", G2L["2b"]);
+G2L["2d"]["Active"] = true;
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(101, 0, 0);
+G2L["2d"]["Size"] = UDim2.new(0, 27, 0, 27);
+G2L["2d"]["Position"] = UDim2.new(0, 2, 0, 2);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Name"] = [[ToggleCircle]];
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker.ToggleCircle.UICorner
+G2L["2e"] = Instance.new("UICorner", G2L["2d"]);
+G2L["2e"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker.TextLabel
+G2L["2f"] = Instance.new("TextLabel", G2L["2b"]);
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2f"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["TextSize"] = 20;
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["BackgroundTransparency"] = 1;
+G2L["2f"]["Size"] = UDim2.new(0, 105, 0, 19);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Text"] = [[Walkspeed Enabler]];
+G2L["2f"]["Position"] = UDim2.new(0, -293, 0, 6);
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.Walkspeed
+G2L["30"] = Instance.new("TextBox", G2L["1d"]);
+G2L["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["30"]["TextWrapped"] = true;
+G2L["30"]["TextSize"] = 14;
+G2L["30"]["Name"] = [[Walkspeed]];
+G2L["30"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["30"]["TextScaled"] = true;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30"]["RichText"] = true;
+G2L["30"]["MultiLine"] = true;
+G2L["30"]["ClearTextOnFocus"] = false;
+G2L["30"]["PlaceholderText"] = [[Number here]];
+G2L["30"]["Size"] = UDim2.new(0, 62, 0, 46);
+G2L["30"]["Position"] = UDim2.new(0.84902, 0, 0.26293, 0);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Text"] = [[]];
+
+
+-- StarterGui.CeliorZuc.Main.SettingsTab.Walkspeed.UICorner
+G2L["31"] = Instance.new("UICorner", G2L["30"]);
+G2L["31"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.CeliorZuc.Main.Dragify
+G2L["32"] = Instance.new("LocalScript", G2L["2"]);
+G2L["32"]["Name"] = [[Dragify]];
+
+
+-- StarterGui.CeliorZuc.Main.OpenCloseScriptSave
+G2L["33"] = Instance.new("LocalScript", G2L["2"]);
+G2L["33"]["Enabled"] = false;
+G2L["33"]["Name"] = [[OpenCloseScriptSave]];
+G2L["33"]["Disabled"] = true;
+
+
+-- StarterGui.CeliorZuc.Main.ExecTab
+G2L["34"] = Instance.new("Frame", G2L["2"]);
+G2L["34"]["ZIndex"] = 0;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["Size"] = UDim2.new(0, 457, 0, 232);
+G2L["34"]["Position"] = UDim2.new(0, 0, 0.10769, 0);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Name"] = [[ExecTab]];
+G2L["34"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.CeliorZuc.Main.ExecTab.TextBox
+G2L["35"] = Instance.new("TextBox", G2L["34"]);
+G2L["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["35"]["TextSize"] = 14;
+G2L["35"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["35"]["RichText"] = true;
+G2L["35"]["MultiLine"] = true;
+G2L["35"]["ClearTextOnFocus"] = false;
+G2L["35"]["PlaceholderText"] = [[your skibidy skript here lulz]];
+G2L["35"]["Size"] = UDim2.new(0, 444, 0, 185);
+G2L["35"]["Position"] = UDim2.new(0.01313, 0, 0.01724, 0);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Text"] = [[print("Hello World!")]];
+
+
+-- StarterGui.CeliorZuc.Main.ExecTab.TextBox.UICorner
+G2L["36"] = Instance.new("UICorner", G2L["35"]);
+G2L["36"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.CeliorZuc.Main.ExecTab.Execution
+G2L["37"] = Instance.new("Frame", G2L["34"]);
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Size"] = UDim2.new(0, 444, 0, 35);
+G2L["37"]["Position"] = UDim2.new(0, 6, 0, 193);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Name"] = [[Execution]];
+
+
+-- StarterGui.CeliorZuc.Main.ExecTab.Execution.UICorner
+G2L["38"] = Instance.new("UICorner", G2L["37"]);
+G2L["38"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.CeliorZuc.Main.ExecTab.Execution.Execute
+G2L["39"] = Instance.new("ImageButton", G2L["37"]);
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["Image"] = [[rbxassetid://104190126655538]];
+G2L["39"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["39"]["BackgroundTransparency"] = 1;
+G2L["39"]["Name"] = [[Execute]];
+G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["Position"] = UDim2.new(0.93217, 0, 0.14286, 0);
+
+
+-- StarterGui.CeliorZuc.Main.ExecTab.Execution.Execute.LocalScript
+G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.ExecTab.Execution.Clear
+G2L["3b"] = Instance.new("ImageButton", G2L["37"]);
+G2L["3b"]["BorderSizePixel"] = 0;
+G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3b"]["Image"] = [[rbxassetid://103533465170990]];
+G2L["3b"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["3b"]["BackgroundTransparency"] = 1;
+G2L["3b"]["Name"] = [[Clear]];
+G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3b"]["Position"] = UDim2.new(0.84683, 0, 0.14286, 0);
+
+
+-- StarterGui.CeliorZuc.Main.ExecTab.Execution.Clear.LocalScript
+G2L["3c"] = Instance.new("LocalScript", G2L["3b"]);
+
+
+
+-- StarterGui.CeliorZuc.Main.OpenCloseScript
+G2L["3d"] = Instance.new("LocalScript", G2L["2"]);
+G2L["3d"]["Name"] = [[OpenCloseScript]];
+
+
+-- StarterGui.CeliorZuc.Main.ScriptHub
+G2L["3e"] = Instance.new("Frame", G2L["2"]);
+G2L["3e"]["Visible"] = false;
+G2L["3e"]["ZIndex"] = 0;
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["Size"] = UDim2.new(0, 457, 0, 232);
+G2L["3e"]["Position"] = UDim2.new(0, 0, 0.10769, 0);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Name"] = [[ScriptHub]];
+G2L["3e"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser
+G2L["3f"] = Instance.new("TextButton", G2L["3e"]);
+G2L["3f"]["TextWrapped"] = true;
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["TextSize"] = 25;
+G2L["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3f"]["Size"] = UDim2.new(0, 134, 0, 71);
+G2L["3f"]["BackgroundTransparency"] = 0.5;
+G2L["3f"]["Name"] = [[NebulaChatBypasser]];
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Text"] = [[Infinite Yield]];
+G2L["3f"]["Position"] = UDim2.new(0.01532, 0, 0.03448, 0);
+
+
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser.UICorner
+G2L["40"] = Instance.new("UICorner", G2L["3f"]);
+G2L["40"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser.Script
+G2L["41"] = Instance.new("LocalScript", G2L["3f"]);
+G2L["41"]["Name"] = [[Script]];
+
+
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser
+G2L["42"] = Instance.new("TextButton", G2L["3e"]);
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["TextSize"] = 25;
+G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["42"]["Size"] = UDim2.new(0, 134, 0, 71);
+G2L["42"]["BackgroundTransparency"] = 0.5;
+G2L["42"]["Name"] = [[NebulaChatBypasser]];
+G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["Text"] = [[Nebula Chat Bypasser]];
+G2L["42"]["Position"] = UDim2.new(0.3523, 0, 0.03448, 0);
+
+
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser.UICorner
+G2L["43"] = Instance.new("UICorner", G2L["42"]);
+G2L["43"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser.Script
+G2L["44"] = Instance.new("LocalScript", G2L["42"]);
+G2L["44"]["Name"] = [[Script]];
+
+
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser
+G2L["45"] = Instance.new("TextButton", G2L["3e"]);
+G2L["45"]["TextWrapped"] = true;
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["TextSize"] = 25;
+G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["45"]["Size"] = UDim2.new(0, 134, 0, 71);
+G2L["45"]["BackgroundTransparency"] = 0.5;
+G2L["45"]["Name"] = [[NebulaChatBypasser]];
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Text"] = [[Dex Explorer]];
+G2L["45"]["Position"] = UDim2.new(0.69147, 0, 0.03448, 0);
+
+
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser.UICorner
+G2L["46"] = Instance.new("UICorner", G2L["45"]);
+G2L["46"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser.Script
+G2L["47"] = Instance.new("LocalScript", G2L["45"]);
+G2L["47"]["Name"] = [[Script]];
+
+
+-- StarterGui.CeliorZuc.Main.Panel.MenuButton.LocalScript
+local function C_7()
+local script = G2L["7"];
+	local function fadeImage(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { ImageTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local function SpinObject(object, dur, goal)
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { Rotation = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+		
+		tween:Play()
+		
+	end
+	
+	local function fadeText(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { TextTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local panel = script.Parent.Parent.Parent.ScrollingFrame.Panel
+	
+	-- Reference to the TextButton
+	local button = script.Parent
+	
+	-- Toggle state variable
+	local isOn = true
+	
+	-- Function to toggle the button
+	local function toggleButton()
+		if isOn then
+			script.Parent.Parent.Parent.ScrollingFrame.Panel:TweenPosition(UDim2.new(0,-1,0,0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.1)
+		else
+			script.Parent.Parent.Parent.ScrollingFrame.Panel:TweenPosition(UDim2.new(0,-1,-1,0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+			panel:TweenSize(UDim2.new(0,45,0,233), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+			fadeText(panel.Discordlabel, 0.1, 1)
+			fadeText(panel.ExecLabel, 0.1, 1)
+			fadeText(panel.Scriptlabel, 0.1, 1)
+			fadeText(panel.Settingslabel, 0.1, 1)
+			fadeText(panel.DiscordButton, 0.1 ,1)
+			fadeImage(panel.ImageLabel, 0.1, 1)
+			_G.isOn = true
+		end
+		isOn = not isOn
+	end
+	
+	-- Connect the function to the button click event
+	button.MouseButton1Click:Connect(toggleButton)
+	
+	button.MouseEnter:Connect(function()
+		SpinObject(button, 0.5, 180)
+	end)
+	
+	button.MouseLeave:Connect(function()
+		SpinObject(button, 0.5, 0)
+	end)
+	
+	
+	
+end;
+task.spawn(C_7);
+-- StarterGui.CeliorZuc.Main.Panel.MenuButton.LocalScript
+local function C_8()
+local script = G2L["8"];
+	_G.isOn = true
+end;
+task.spawn(C_8);
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.ExecutorTab.LocalScript
+local function C_f()
+local script = G2L["f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.ScriptHub.Visible = false
+		script.Parent.Parent.Parent.Parent.SettingsTab.Visible = false
+		script.Parent.Parent.Parent.Parent.ExecTab.Visible = true
+	end)
+end;
+task.spawn(C_f);
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.ScriptsTab.LocalScript
+local function C_11()
+local script = G2L["11"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.ScriptHub.Visible = true
+		script.Parent.Parent.Parent.Parent.SettingsTab.Visible = false
+		script.Parent.Parent.Parent.Parent.ExecTab.Visible = false
+	end)
+end;
+task.spawn(C_11);
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.SettingsTab.LocalScript
+local function C_13()
+local script = G2L["13"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.ScriptHub.Visible = false
+		script.Parent.Parent.Parent.Parent.SettingsTab.Visible = true
+		script.Parent.Parent.Parent.Parent.ExecTab.Visible = false
+	end)
+end;
+task.spawn(C_13);
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.DiscordButton.LocalScript
+local function C_1a()
+local script = G2L["1a"];
+	local function copydiscord()
+		setclipboard(script.Parent.Text)
+	end
+	
+	script.Parent.MouseButton1Click:Connect(copydiscord)
+end;
+task.spawn(C_1a);
+-- StarterGui.CeliorZuc.Main.ScrollingFrame.Panel.MenuButton.LocalScript
+local function C_1c()
+local script = G2L["1c"];
+	--big size: {0, 148},{0, 233}
+	--small size: {0, 45},{0, 233}
+	--first pos: {0, -1},{-1, 0}
+	--second pos: {0, -1},{0, 0}
+	
+	_G.isOn = true
+	
+	local panel = script.Parent.Parent
+	
+	local function fadeImage(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { ImageTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local function fadeText(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { TextTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	-- Reference to the TextButton
+	local button = script.Parent
+	
+	-- Toggle state variable
+	
+	
+	-- Function to toggle the button
+	local function toggleButton()
+		if _G.isOn then
+			script.Parent.Parent:TweenSize(UDim2.new(0,148,0,233), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.1)
+			fadeText(panel.Discordlabel, 0.1, 0)
+			fadeText(panel.ExecLabel, 0.1, 0)
+			fadeText(panel.Scriptlabel, 0.1, 0)
+			fadeText(panel.Settingslabel, 0.1, 0)
+			fadeText(panel.DiscordButton, 0.1, 0)
+			fadeImage(panel.ImageLabel, 0.1, 0)
+		else
+			script.Parent.Parent:TweenSize(UDim2.new(0,45,0,233), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+			fadeText(panel.Discordlabel, 0.1, 1)
+			fadeText(panel.ExecLabel, 0.1, 1)
+			fadeText(panel.Scriptlabel, 0.1, 1)
+			fadeText(panel.Settingslabel, 0.1, 1)
+			fadeText(panel.DiscordButton, 0.1 ,1)
+			fadeImage(panel.ImageLabel, 0.1, 1)
+		end
+		_G.isOn = not _G.isOn
+	end
+	
+	-- Connect the function to the button click event
+	button.MouseButton1Click:Connect(toggleButton)
+end;
+task.spawn(C_1c);
+-- StarterGui.CeliorZuc.Main.SettingsTab.LocalScript
+local function C_20()
+local script = G2L["20"];
+	local function fadeImage(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { ImageTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local function SpinObject(object, dur, goal)
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { Rotation = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+		
+		tween:Play()
+		
+	end
+	
+	local function fadeText(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { TextTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local panel = script.Parent.Parent.Parent.ScrollingFrame.Panel
+	
+	-- Reference to the TextButton
+	local button = script.Parent
+	
+	-- Toggle state variable
+	local isOn = true
+	
+	-- Function to toggle the button
+	local function toggleButton()
+		if isOn then
+			script.Parent.Parent.Parent.ScrollingFrame.Panel:TweenPosition(UDim2.new(0,-1,0,0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.1)
+		else
+			script.Parent.Parent.Parent.ScrollingFrame.Panel:TweenPosition(UDim2.new(0,-1,-1,0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+			panel:TweenSize(UDim2.new(0,45,0,233), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.1)
+			fadeText(panel.Discordlabel, 0.1, 1)
+			fadeText(panel.ExecLabel, 0.1, 1)
+			fadeText(panel.Scriptlabel, 0.1, 1)
+			fadeText(panel.Settingslabel, 0.1, 1)
+			fadeText(panel.DiscordButton, 0.1 ,1)
+			fadeImage(panel.ImageLabel, 0.1, 1)
+			_G.isOn = true
+		end
+		isOn = not isOn
+	end
+	
+	-- Connect the function to the button click event
+	button.MouseButton1Click:Connect(toggleButton)
+	
+	button.MouseEnter:Connect(function()
+		SpinObject(button, 0.5, 180)
+	end)
+	
+	button.MouseLeave:Connect(function()
+		SpinObject(button, 0.5, 0)
+	end)
+	
+	
+	
+end;
+task.spawn(C_20);
+-- StarterGui.CeliorZuc.Main.SettingsTab.FPSUnlocker.FPSUnlocker.LocalScript
+local function C_24()
+local script = G2L["24"];
+	local function fadeImage(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { ImageTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local function TweenColor(object, dur, goal)
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { BackgroundColor3 = goal})
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		tween:Play()
+	
+	end
+	
+	local function fadeText(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { TextTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	-- Reference to the TextButton
+	local button = script.Parent.Parent
+	
+	-- Toggle state variable
+	local isOn = true
+	
+	-- Function to toggle the button
+	local function toggleButton()
+		if isOn then
+			script.Parent.Parent.FPSUnlocker.ToggleCircle:TweenPosition(UDim2.new(0,38,0,2), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3)
+			TweenColor(script.Parent.ToggleCircle, 0.3, Color3.fromRGB(0, 100, 0))
+			setfflag("TaskSchedulerTargetFps", script.Parent.Parent.Parent.FPS.Text)
+		else
+			script.Parent.Parent.FPSUnlocker.ToggleCircle:TweenPosition(UDim2.new(0,2,0,2), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3)
+			TweenColor(script.Parent.ToggleCircle, 0.3, Color3.fromRGB(100, 0, 0))
+			setfflag("TaskSchedulerTargetFps", "120")
+		end
+		isOn = not isOn
+	end
+	
+	-- Connect the function to the button click event
+	button.MouseButton1Click:Connect(toggleButton)
+	
+	button.MouseEnter:Connect(function()
+		
+	end)
+	
+	button.MouseLeave:Connect(function()
+		
+	end)
+	
+	
+	
+	
+end;
+task.spawn(C_24);
+-- StarterGui.CeliorZuc.Main.SettingsTab.WalkSpeedChanger.FPSUnlocker.LocalScript
+local function C_2c()
+local script = G2L["2c"];
+	local function TweenColor(object, dur, goal)
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { BackgroundColor3 = goal})
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		tween:Play()
+	
+	end
+	
+	
+	
+	-- Reference to the TextButton
+	local button = script.Parent.Parent
+	
+	-- Toggle state variable
+	local isOn = true
+	
+	-- Function to toggle the button
+	local function toggleButton()
+		if isOn then
+			script.Parent.Parent.FPSUnlocker.ToggleCircle:TweenPosition(UDim2.new(0,38,0,2), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3)
+			TweenColor(script.Parent.ToggleCircle, 0.3, Color3.fromRGB(0, 100, 0))
+			game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = script.Parent.Parent.Parent.Walkspeed.Text
+		else
+			script.Parent.Parent.FPSUnlocker.ToggleCircle:TweenPosition(UDim2.new(0,2,0,2), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3)
+			TweenColor(script.Parent.ToggleCircle, 0.3, Color3.fromRGB(100, 0, 0))
+			game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 16
+		end
+		isOn = not isOn
+	end
+	
+	-- Connect the function to the button click event
+	button.MouseButton1Click:Connect(toggleButton)
+	
+	button.MouseEnter:Connect(function()
+		
+	end)
+	
+	button.MouseLeave:Connect(function()
+		
+	end)
+	
+	
+	
+	
+end;
+task.spawn(C_2c);
+-- StarterGui.CeliorZuc.Main.Dragify
+local function C_32()
+local script = G2L["32"];
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end;
+task.spawn(C_32);
+-- StarterGui.CeliorZuc.Main.ExecTab.Execution.Execute.LocalScript
+local function C_3a()
+local script = G2L["3a"];
+	local textbox = script.Parent.Parent.Parent.TextBox
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		print(textbox.Text)
+	end)
+end;
+task.spawn(C_3a);
+-- StarterGui.CeliorZuc.Main.ExecTab.Execution.Clear.LocalScript
+local function C_3c()
+local script = G2L["3c"];
+	local function changetext(textbox, text)
+		textbox.Text = ""
+	end
+	local text = script.Parent.Parent.Parent.TextBox
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		changetext(text, "")
+	end)
+end;
+task.spawn(C_3c);
+-- StarterGui.CeliorZuc.Main.OpenCloseScript
+local function C_3d()
+local script = G2L["3d"];
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	local frame = script.Parent
+	
+	local TextBox = frame:WaitForChild("ExecTab"):WaitForChild("TextBox")
+	
+	local Execution = frame.ExecTab:WaitForChild("Execution")
+	local Clear = Execution:WaitForChild("Clear")
+	local Execute = Execution:WaitForChild("Execute")
+	local Menu = frame.ScrollingFrame:WaitForChild("Panel")
+	
+	local Panel = frame:WaitForChild("Panel")
+	
+	local function fadeObject(object, dur, goal) --callback
+		
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { BackgroundTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+		
+	end
+	
+	local function fadeImage(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { ImageTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	local function fadeText(object, dur, goal) --callback
+	
+		-- Create a tween for the transparency property
+		local tweenInfo = TweenInfo.new(dur, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+		local tween = game:GetService("TweenService"):Create(object, tweenInfo, { TextTransparency = goal })
+	
+		tween.Completed:Connect(function()
+			--[[if callback then
+				callback()
+			end]]--
+		end)
+	
+		-- Start the tween
+		tween:Play()
+	
+	end
+	
+	UserInputService.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.Insert then
+			if frame.Visible then
+				frame.Visible = false
+			elseif not frame.Visible then
+				frame.Visible = true
+				
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_3d);
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser.Script
+local function C_41()
+local script = G2L["41"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end)
+end;
+task.spawn(C_41);
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser.Script
+local function C_44()
+local script = G2L["44"];
+	script.Parent.MouseButton1Click:Connect(function()
+		--[=[
+	 d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+	88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+	88      88    88    88            odD'      88      88    88 88ooo88 
+	88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+	88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+	 Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+	]=]
+	
+		-- Instances: 9 | Scripts: 2 | Modules: 0 | Tags: 0
+		local G2L = {};
+	
+		-- StarterGui.ChatBypasser
+		G2L["1"] = Instance.new("ScreenGui", game:WaitForChild("CoreGui"));
+		G2L["1"]["Enabled"] = false;
+		G2L["1"]["Name"] = [[ChatBypasser]];
+	
+	
+		-- StarterGui.ChatBypasser.Main
+		G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
+		G2L["2"]["Active"] = true;
+		G2L["2"]["BorderSizePixel"] = 0;
+		G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+		G2L["2"]["Image"] = [[rbxassetid://102932831004794]];
+		G2L["2"]["Size"] = UDim2.new(0, 307, 0, 113);
+		G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+		G2L["2"]["Name"] = [[Main]];
+		G2L["2"]["Position"] = UDim2.new(0.63926, 0, 0.6517, 0);
+	
+	
+		-- StarterGui.ChatBypasser.Main.TextLabel
+		G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+		G2L["3"]["BorderSizePixel"] = 0;
+		G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+		G2L["3"]["TextSize"] = 25;
+		G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+		G2L["3"]["TextColor3"] = Color3.fromRGB(232, 105, 0);
+		G2L["3"]["BackgroundTransparency"] = 1;
+		G2L["3"]["Size"] = UDim2.new(0, 208, 0, 58);
+		G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+		G2L["3"]["Text"] = [[FE Chat Bypasser]];
+		G2L["3"]["Position"] = UDim2.new(0.15961, 0, 0.61947, 0);
+	
+	
+		-- StarterGui.ChatBypasser.Main.UICorner
+		G2L["4"] = Instance.new("UICorner", G2L["2"]);
+		G2L["4"]["CornerRadius"] = UDim.new(0, 5);
+	
+	
+		-- StarterGui.ChatBypasser.Main.SendButton
+		G2L["5"] = Instance.new("TextButton", G2L["2"]);
+		G2L["5"]["TextWrapped"] = true;
+		G2L["5"]["BorderSizePixel"] = 0;
+		G2L["5"]["TextSize"] = 14;
+		G2L["5"]["TextColor3"] = Color3.fromRGB(232, 105, 0);
+		G2L["5"]["TextScaled"] = true;
+		G2L["5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+		G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+		G2L["5"]["Size"] = UDim2.new(0, 135, 0, 32);
+		G2L["5"]["BackgroundTransparency"] = 0.3;
+		G2L["5"]["Name"] = [[SendButton]];
+		G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+		G2L["5"]["Text"] = [[Insult]];
+		G2L["5"]["Position"] = UDim2.new(0.28013, 0, 0.61947, 0);
+	
+	
+		-- StarterGui.ChatBypasser.Main.SendButton.UICorner
+		G2L["6"] = Instance.new("UICorner", G2L["5"]);
+		G2L["6"]["CornerRadius"] = UDim.new(0, 5);
+	
+	
+		-- StarterGui.ChatBypasser.Main.ChatBox
+		G2L["7"] = Instance.new("TextBox", G2L["2"]);
+		G2L["7"]["TextColor3"] = Color3.fromRGB(232, 105, 0);
+		G2L["7"]["PlaceholderColor3"] = Color3.fromRGB(255, 158, 0);
+		G2L["7"]["BorderSizePixel"] = 0;
+		G2L["7"]["TextWrapped"] = true;
+		G2L["7"]["TextSize"] = 20;
+		G2L["7"]["Name"] = [[ChatBox]];
+		G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+		G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+		G2L["7"]["PlaceholderText"] = [[hate slur here]];
+		G2L["7"]["Size"] = UDim2.new(0, 200, 0, 50);
+		G2L["7"]["Position"] = UDim2.new(0.17264, 0, 0.0885, 0);
+		G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+		G2L["7"]["Text"] = [[]];
+		G2L["7"]["BackgroundTransparency"] = 0.3;
+	
+	
+		-- StarterGui.ChatBypasser.Main.LocalScript
+		G2L["8"] = Instance.new("LocalScript", G2L["2"]);
+	
+	
+	
+		-- StarterGui.ChatBypasser.Main.LocalScript
+		G2L["9"] = Instance.new("LocalScript", G2L["2"]);
+	
+	
+	
+		-- StarterGui.ChatBypasser.Main.LocalScript
+		local function C_8()
+			local script = G2L["8"];
+			local textBox = script.Parent:FindFirstChild("ChatBox")
+			local bypassButton = script.Parent:FindFirstChild("SendButton")
+			local TextChatService = game:GetService("TextChatService")
+			local function sendMessageToChat(str)
+				print("sm2c", str)
+				if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+					TextChatService.TextChannels.RBXGeneral:SendAsync(str)
+				else
+					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(str, "All")
+				end
+			end
+	
+			local function convertText(text)
+				local styleMap = {
+					a = "🅰", b = "🅱", c = "🅲", d = "🅳", e = "🅴", f = "🅵", g = "🅶", h = "🅷", i = "🅸", j = "🅹", k = "🅺",
+					l = "🅻", m = "🅼", n = "🅽", o = "🅾", p = "🅿", q = "🆀", r = "🆁", s = "🆂", t = "🆃", u = "🆄", v = "🆅",
+					w = "🆆", x = "🆇", y = "🆈", z = "🆉",
+					["1"] = "①", ["2"] = "②", ["3"] = "③", ["4"] = "④", ["5"] = "⑤", ["6"] = "⑥", ["7"] = "⑦", ["8"] = "⑧", ["9"] = "⑨", ["0"] = "⓪"
+				}
+	
+				local convertedText = ""
+				for i = 1, #text do
+					local char = text:sub(i, i):lower()
+					convertedText = convertedText .. (styleMap[char] or char)
+				end
+	
+				return convertedText
+			end
+	
+			local function onClick()
+				local inputText = textBox.Text
+				local convertedText = convertText(inputText)
+				print("Converted Text: " .. convertedText)
+				sendMessageToChat(convertedText)
+			end
+	
+			-- Trigger conversion on button click
+			bypassButton.MouseButton1Click:Connect(onClick)
+	
+			-- Trigger conversion on Enter key press in TextBox
+			textBox.FocusLost:Connect(function(enterPressed)
+				if enterPressed then
+					onClick()
+				end
+			end)
+		end;
+		task.spawn(C_8);
+		-- StarterGui.ChatBypasser.Main.LocalScript
+		local function C_9()
+			local script = G2L["9"];
+			script.Parent.Draggable = true
+			script.Parent.Active = true
+		end;
+		task.spawn(C_9);
+	
+		return G2L["1"], require;
+	end)
+end;
+task.spawn(C_44);
+-- StarterGui.CeliorZuc.Main.ScriptHub.NebulaChatBypasser.Script
+local function C_47()
+local script = G2L["47"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+	end)
+end;
+task.spawn(C_47);
+
+return G2L["1"], require;
